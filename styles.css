@@ -1,0 +1,492 @@
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+html{
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'spartan', sans-serif;
+}
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background:white;
+  color: #080808 ;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+nav {
+  background:transparent;
+  color:rgb(0, 0, 33);
+}
+nav h1{
+  font-size: 2.3rem;
+}
+.nav-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.nav-toggle {
+  font-size: 1.5rem;
+  color: rgb(115, 115, 210);
+  background: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+.nav-toggle:hover {
+  color: black;
+  transform: rotate(90deg);
+}
+
+nav ul li a{
+  color: rgb(46, 45, 45);
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+nav ul li a:hover::after{
+  width: 100%;
+
+}
+ .links a {
+  color: #ff004f;
+  font-size: 1rem;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  display: block;
+  padding: 0.3rem 1rem;
+}
+.links a:hover {
+  color:#ff004f;
+  padding-left: 1.25rem;
+} 
+.links {
+  height: 0;
+  overflow: hidden;
+}
+.show-links {
+  height: 10rem;
+}
+.btn{
+  padding: 10px 60px;
+  border-radius: 30px;
+  background-color: rgb(255, 224, 48);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+}
+/* ============home============= */
+
+#home{
+  padding: 50px;
+  background-color: white
+}
+
+.home-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 0px;
+  background-color: white;
+  color: black;
+
+}
+.home-list h1{
+  font-size: 3.2rem;
+  padding: 0vw;
+  text-align: left;
+}
+.home-list div{
+  padding: 0px;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.home-list div img{
+  height: 90%;
+  width: 40%;
+  border-radius: 50%;
+  padding: 1vh;
+}
+.list{
+  display: flex;
+  padding: 0px;
+}
+.list li{
+  padding: 10px;
+  font-size: 30px;
+}
+.yellow
+{
+  color: rgb(255, 224, 48);
+  font-weight: 900;
+  font-size: 25px;
+}
+.btn1{
+  padding: 15px 70px;
+  border-radius: 30px;
+  background-color: rgb(255, 224, 48);
+  font-weight: 700;
+  font-size: 0.9rem;
+  border: none;
+}
+.container .home-list .ptag .btns{
+  text-align: left;
+  margin-top: 0px;
+}
+
+/* =============skills============= */
+
+#skills{
+  padding: 0px;
+  background-color: black;
+}
+
+.skills-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 0px;
+  background-color: black;
+  color: white;
+}
+.skills-list div{
+  padding: 0px;
+  margin: 20px 0px ;
+  justify-content: center;
+  text-align: center;
+}
+.yellow
+{
+  color: rgb(255, 224, 48);
+  font-weight: 900;
+  font-size: 25px;
+}
+.skills-list p{
+  font-size: 20px;
+  font-weight: 500;
+}
+
+/* ============services title=========== */
+
+#services-t{
+  padding: 0px;
+  background-color: white;
+  margin-top: 4rem;
+}
+
+.services-t-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 0px;
+  background-color: white;
+  color: black;
+ 
+}
+.services-t-list div{
+  padding: 0px;
+  margin: 20px 0px ;
+  justify-content: center;
+  text-align: center;
+}
+.services-t-list h1{
+  font-size: 4rem;
+  font-weight: 700;
+  text-decoration: underline yellow ;
+}
+.services-t-list p{
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: -5px;
+}
+
+/* ===========services============= */
+#service{
+  padding: 30px;
+  background-color: white;
+  margin-top: 4rem;
+
+}
+
+.service1-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 70px;
+  background-color: white;
+  color: black;
+ 
+}
+.service1-list div{
+  justify-content: center;
+  text-align: center;
+  background-color: silver;
+  padding: 40px;
+  /* padding-left: 0px; */
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+.service1-list h1{
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline yellow;
+}
+
+
+.container .service1-list  i{
+  font-weight: 400;
+  font-size: 2rem;
+  padding-right: 10px;
+}
+/* =========================services 2=================== */
+
+.service2-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 70px;
+  background-color: white;
+  color: black;
+ 
+}
+.service2-list div{
+  justify-content: center;
+  text-align: center;
+  background-color: silver;
+  padding: 40px;
+  /* padding-left: 0px; */
+  font-size: 1rem;
+  font-weight: 800;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+.service2-list h1{
+  font-size: 1rem;
+  font-weight: 700;
+  text-decoration: underline yellow;
+}
+
+
+.container .service2-list  i{
+  font-weight: 400;
+  font-size: 2rem;
+  padding-right: 10px;
+}
+.container .view{
+  text-align: center;
+  justify-content: center;
+  padding: 40px 0;
+  
+}
+/* ======================portfolio 1==================== */
+#portfolio{
+  padding: 30px;
+  background-color: white;
+  margin-top: 4rem;
+
+}
+
+.portfolio1-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 70px;
+  background-color: white;
+  color: black;
+ 
+}
+.portfolio1-list div{
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  border: solid 3px;
+  padding: 40px;
+  font-size: 1rem;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+.portfolio1-list h2{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+.container .portfolio1-list  i{
+  font-weight: 400;
+  font-size: 2rem;
+  padding-right: 10px;
+}
+
+
+
+
+
+/* ===================sirf text change krna hai aur kuch na krna,aur bs wo testinomials pr circle lagany ki koshish krna ,jo mujy yaqeen hai nhi ho ga tm se============== */
+#test{
+  padding: 30px;
+  background-color: white;
+  margin-top: 4rem;
+
+}
+
+.test-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 70px;
+  background-color: white;
+  color: black;
+ 
+}
+.test-list div{
+  justify-content: center;
+  text-align: center;
+  background-color: silver;
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+.test-list p{
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+/* ==========footer============= */
+#footer{
+  padding: 30px;
+  background-color: black;
+  margin-top: 4rem;
+}
+
+.footer-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 70px;
+  color: white
+ 
+}
+.footer-list div{
+  justify-content: center;
+  text-align: left;
+  padding: 40px;
+  border-radius: 10px;
+  display: inline-block;
+
+}
+
+
+
+
+
+
+@media screen and (min-width: 800px) {
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links {
+    height: auto;
+    display: flex;
+  }
+  .links a {
+    padding: 0;
+    margin: 0 0.5rem;
+
+  }
+  .links a:hover {
+    padding: 0;
+    background: transparent;
+    color: rgb(170, 1, 1);
+    font-size: 1.4rem;
+  } 
+  .services-t-list p{
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: -5px;
+  }
+}
+
+@media only screen and (max-width: 600px){
+
+
+    #home{
+  padding: 50px;
+  background-color: white
+}
+
+.home-list{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+  grid-gap: 0px;
+  background-color: white;
+  color: black;
+
+}
+.home-list h1{
+  font-size: 1.8rem;
+  padding: 0vw;
+  text-align: left;
+}
+.home-list div{
+  padding: 0px;
+  margin-top: 50px;
+  justify-content: center;
+  text-align: center;
+}
+.home-list div img{
+  height: 35vh;
+  width: 70vw;
+}
+.list li{
+  padding: 5px;
+  font-size: 17px;
+}
+
+.container .home-list .ptag .btns{
+  padding: 10px;
+}
+
+
+#footer{
+  padding: 10px;
+  margin-top: 0rem;
+}
+
+.footer-list{
+  grid-gap: 0px;
+}
+.footer-list div{
+  padding: 10px;
+}
+}
