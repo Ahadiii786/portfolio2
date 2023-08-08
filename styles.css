@@ -12,10 +12,11 @@ html{
 }
 body {
   font-family: 'Courier New', Courier, monospace;
-  background:white;
+  background:#f2efe8;
   color: #080808 ;
   line-height: 1.5;
   font-size: 0.875rem;
+  
 }
 ul {
   list-style-type: none;
@@ -90,7 +91,7 @@ nav ul li a:hover::after{
 .btn{
   padding: 10px 60px;
   border-radius: 30px;
-  background-color: rgb(255, 224, 48);
+  background-color: #ffda00;
   font-weight: 700;
   font-size: 0.9rem;
   border: none;
@@ -99,14 +100,14 @@ nav ul li a:hover::after{
 
 #home{
   padding: 50px;
-  background-color: white
+  background-color: #f2efe8;
 }
 
 .home-list{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 0px;
-  background-color: white;
+  background-color: #f2efe8;
   color: black;
 
 }
@@ -137,14 +138,14 @@ nav ul li a:hover::after{
 }
 .yellow
 {
-  color: rgb(255, 224, 48);
+  color: #ffda00;
   font-weight: 900;
   font-size: 25px;
 }
 .btn1{
   padding: 15px 70px;
   border-radius: 30px;
-  background-color: rgb(255, 224, 48);
+  background-color: #ffda00;
   font-weight: 700;
   font-size: 0.9rem;
   border: none;
@@ -153,6 +154,23 @@ nav ul li a:hover::after{
   text-align: left;
   margin-top: 0px;
 }
+/* Add this CSS to your stylesheet */
+.underline-text {
+  display: inline;
+  position: relative;
+}
+
+.underline-text::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 19px; /* Adjust the thickness as needed */
+  background-color: #ffda00; /* Adjust the color as needed */
+  bottom: -4px; /* Adjust this value for the desired distance */
+  left: 0;
+  opacity: 0.9;
+}
+
 
 /* =============skills============= */
 
@@ -189,7 +207,7 @@ nav ul li a:hover::after{
 
 #services-t{
   padding: 0px;
-  background-color: white;
+  background-color: #f2efe8;
   margin-top: 4rem;
 }
 
@@ -197,7 +215,7 @@ nav ul li a:hover::after{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 0px;
-  background-color: white;
+  background-color: #f2efe8;
   color: black;
  
 }
@@ -221,7 +239,7 @@ nav ul li a:hover::after{
 /* ===========services============= */
 #service{
   padding: 30px;
-  background-color: white;
+  background-color: #f2efe8;
   margin-top: 4rem;
 
 }
@@ -230,14 +248,14 @@ nav ul li a:hover::after{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 70px;
-  background-color: white;
+  background-color: #f2efe8;
   color: black;
  
 }
 .service1-list div{
   justify-content: center;
   text-align: center;
-  background-color: silver;
+  background-color: #d9d9d9;
   padding: 40px;
   /* padding-left: 0px; */
   font-size: 1rem;
@@ -264,14 +282,14 @@ nav ul li a:hover::after{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 70px;
-  background-color: white;
+  background-color: #f2efe8;
   color: black;
  
 }
 .service2-list div{
   justify-content: center;
   text-align: center;
-  background-color: silver;
+  background-color: #d9d9d9;
   padding: 40px;
   /* padding-left: 0px; */
   font-size: 1rem;
@@ -301,7 +319,7 @@ nav ul li a:hover::after{
 /* ======================portfolio 1==================== */
 #portfolio{
   padding: 30px;
-  background-color: white;
+  background-color: #f2efe8;
   margin-top: 4rem;
 
 }
@@ -310,14 +328,14 @@ nav ul li a:hover::after{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 70px;
-  background-color: white;
+  background-color: #f2efe8;
   color: black;
  
 }
 .portfolio1-list div{
   justify-content: center;
   text-align: center;
-  background-color: white;
+  background-color: #f2efe8;
   border: solid 3px;
   padding: 40px;
   font-size: 1rem;
@@ -344,7 +362,7 @@ nav ul li a:hover::after{
 
 #test{
   padding: 30px;
-  background-color: white;
+  background-color: #f2efe8;
   margin-top: 4rem;
 
 }
@@ -353,7 +371,7 @@ nav ul li a:hover::after{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 70px;
-  background-color: white;
+  background-color: #f2efe8;
   color: black;
  
 }
@@ -397,7 +415,96 @@ nav ul li a:hover::after{
 .footer-list div i{
   color: #ff004f;
 }
+/* =========================contact==================== */
+.btn{
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ffda00;
+padding: 14px 50px;
+border-radius: 6px;
+}
+.btn:hover{
+  color: #080808;
+  background-color: #ffda00;
+}
 
+#contact{
+  padding: 20px 0px;
+  margin-left: 4rem;
+  margin-right: 4rem;
+}
+.contact-left{
+  flex-basis: 35%;
+}
+.contact-right{
+  flex-basis: 60%;
+}
+
+.contact-left p{
+  margin-top: 30px;
+}
+
+.contact-left p i{
+color:#ffda00;
+margin-right: 15px;
+font-size: 25px;
+}
+
+.social-icon{
+  margin-top: 30px;
+}
+
+.social-icon a{
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+.social-icon a:hover{
+  color: #ffda00;
+  transform: translateY(-10px);
+}
+
+.btn-btn2{
+  display: block;
+  margin-top: 30px;
+  width: fit-content;
+  padding: 14px 50px;
+  border-radius: 6px;
+  background-color: #ffda00;
+  color: black;
+  border: 1px solid #ffda00;
+}
+.btn-btn2:hover{
+  color: #ffda00;
+  background-color: #fff;
+  border: 1px solid #ffda00;
+}
+
+.contact-right form{
+  width: 100%;
+}
+
+form input ,form textarea{
+  width: 100%;
+  border: 0;
+  outline: none;
+  background:  #d9d9d9;
+  padding: 15px;
+  margin: 15px 0;
+  color: black;
+  font-size: 18px;
+  border-radius: 6px;
+}
+#msg{
+  color: #61b752;
+  display: block;
+  margin-top: -5px;
+  font-weight: 300;
+}
 
 
 
@@ -444,14 +551,14 @@ nav ul li a:hover::after{
 
     #home{
   padding: 50px;
-  background-color: white
+  background-color: #f2efe8;
 }
 
 .home-list{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
   grid-gap: 0px;
-  background-color: white;
+  background-color: #f2efe8;
   color: black;
 
 }
@@ -476,6 +583,7 @@ nav ul li a:hover::after{
 
 .container .home-list .ptag .btns{
   padding: 10px;
+
 }
 
 
@@ -495,4 +603,67 @@ nav ul li a:hover::after{
 .footer-list div i{
   padding-top: 30px;
 }
+
+/* =======skills======== */
+
+.skills-list{
+  display: flex;
 }
+.skills-list div{
+  padding: 0px;
+  margin: 0px 0px ;
+}
+.yellow
+{
+  font-size: 15px;
+}
+.skills-list p{
+  font-size: 10px;
+  padding: 4px;
+}
+
+.contact-left,.contact-right{
+  flex-basis: 100%;
+ }
+}
+
+
+
+.underline-container {
+  position: relative;
+  display: inline-block;
+}
+
+.underlined-text {
+  position: relative;
+  font-size: 70px;
+  display: inline-block;
+  padding-bottom: 5px; /* Adjust this value to control the gap between text and underline */
+}
+
+.underlined-text::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 20px; /* Adjust this value to control the underline thickness */
+  background-color: #ffda00; /* Adjust the color of the underline */
+  bottom: 4px;
+  margin-bottom: 17px;
+  opacity: 0.8;
+  border-radius: 30%;
+}
+
+#element
+{
+  color: #ffda00;
+}
+#msg{
+  color: #61b752;
+  display: block;
+  margin-top: -5px;
+  font-weight: 300;
+}
+
+
+
+

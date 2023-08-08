@@ -42,7 +42,7 @@
                   <a href="#test">testinomial</a>
                 </li>
               </ul>
-              <button class="btn">Let's Talk</button>
+             <a href="contact.html" target="_blank"> <button class="btn1">Let's Talk</button></a>
             </div>
           </nav>
     </header>
@@ -53,7 +53,8 @@
         <div class="container">
             <div class="home-list">
               <div class="ptag">
-                <h1>HEY! I AM SAAD A <br> CREATIVE <span style="text-decoration: underline yellow;">UI/UX</span> DESIGNER <br> AND DEVELOPER.</h1>
+                <h1>HEY! I AM <span class="underline-text">SAAD</span> A <br> CREATIVE <br>  <span id="element"></span></h1>
+               
                 <div >
                   <ul class="list">
                     <li><span class="yellow">&#8226</span>  Designer</li>
@@ -62,12 +63,12 @@
                   </ul>
                 </div>
                   <div class="btns">
-                    <button class="btn1" style="background-color: whitesmoke; color: black; border: 5px;">Want to Discuss?</button>
-                    <button class="btn1">Let's Talk</button>
+                    <button class="btn1" style="background-color: #f2efe8; color: black; border: solid 3px;">Want to Discuss?</button><br><br>
+                    <a href="contact.html" target="_blank"><button class="btn1">Let's Talk</button></a>
                   </div>
               </div>
               <div>
-                <img src="images/r2.jpg">
+                <img src="images/home.png">
               </div>          
             </div>
           </div>
@@ -100,7 +101,7 @@
             <div class="container">
               <div class="services-t-list">
                 <div>
-                  <h1>Services</h1>
+                  <h1><span class="underlined-text">Services</span></h1>
                   <p>Here are the services we are providing to you.</p>
                 </div>           
               </div>
@@ -146,7 +147,7 @@
                            
               </div>
               <div class="view">
-                <button class="btn" style="font-weight: 900;">View All
+                <button class="btn1" style="font-weight: 900;">View All
                 </button>
               </div>
             </div>
@@ -156,7 +157,7 @@
             <div class="container">
               <div class="services-t-list">
                 <div>
-                  <h1>Portfolio</h1>
+                  <h1 class="underlined-text">Portfolio</h1>
                   <p>Click on my cards to see my portfolios of related category</p>
                 </div>           
               </div>
@@ -204,7 +205,7 @@
                     <i class="fa-solid fa-envelope"></i>
                     <h2>Want your stunning designs</h2><br><br>
                     <p>If uou want any kind of the listed services you can simply send us an email or leave a messag on any social media platform.</p><br>
-                    <button class="btn">Let's Talk</button>
+                    <a href="contact.html" target="_blank"><button class="btn1">Let's Talk</button></a>
                   </div>
                            
               </div>
@@ -216,7 +217,7 @@
             <div class="container">
               <div class="services-t-list">
                 <div>
-                  <h1>Testimonials</h1>
+                  <h1 class="underlined-text">Testimonials</h1>
                   <p>Here are some testinomials by our clients</p>
                 </div>           
               </div>
@@ -270,5 +271,13 @@
     </footer>
     <script src="app.js"></script>
     <script src="https://kit.fontawesome.com/591c3143d3.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#element', {
+        strings: ['UI/UX DESIGNER','WORDPRESS DEVELOPER' ,'WEB DEVELOPER'],
+        typeSpeed: 50,
+      });
+    </script>
 </body>
+
 </html>
